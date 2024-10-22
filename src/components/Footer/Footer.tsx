@@ -7,10 +7,13 @@ export const Footer = () => {
     <footer className="text-white mt-10 bg-gray-100 p-4">
       <div className="mx-auto flex max-w-7xl justify-between">
         <div className="space-x-4">
-          <Link href="/terms" className="text-white-100 hover:underline">
+          <Link
+            href="/terms-conditions"
+            className="text-white-100 hover:text-blue-700"
+          >
             Terms & Conditions
           </Link>
-          <Link href="/privacy" className="text-white-100 hover:underline">
+          <Link href="/privacy" className="text-white-100 hover:text-blue-700">
             Privacy Policy
           </Link>
         </div>
