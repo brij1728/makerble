@@ -4,28 +4,28 @@ import Link from 'next/link';
 
 export const Footer = () => {
   return (
-    <footer className="text-white mt-10 bg-gray-100 p-4">
-      <div className="mx-auto flex max-w-7xl justify-between">
+    <footer className="bg-gray-800 p-4">
+      <div className="text-white mx-auto flex max-w-screen-xl items-center justify-between">
+        {/* Terms and Privacy Links */}
         <div className="space-x-4">
-          <Link
-            href="/terms-conditions"
-            className="text-white-100 hover:text-blue-700"
-          >
+          <Link href="/terms-conditions" className="hover:text-blue-400">
             Terms & Conditions
           </Link>
-          <Link href="/privacy" className="text-white-100 hover:text-blue-700">
+          <Link href="/privacy" className="hover:text-blue-400">
             Privacy Policy
           </Link>
         </div>
-        <div className="flex gap-2 space-x-4">
-          <Link href="https://www.instagram.com" className="text-white-100">
-            <FaInstagram className="h-6 w-6" />
+
+        {/* Social Icons */}
+        <div className="flex space-x-4">
+          <Link href="https://www.instagram.com" aria-label="Instagram">
+            <FaInstagram className="h-6 w-6 hover:text-blue-400" />
           </Link>
-          <Link href="https://www.linkedin.com" className="text-white-100">
-            <FaLinkedin className="h-6 w-6" />
+          <Link href="https://www.linkedin.com" aria-label="LinkedIn">
+            <FaLinkedin className="h-6 w-6 hover:text-blue-400" />
           </Link>
-          <Link href="https://www.twitter.com" className="text-white-100">
-            <FaXTwitter className="h-6 w-6" />
+          <Link href="https://www.twitter.com" aria-label="Twitter">
+            <FaXTwitter className="h-6 w-6 hover:text-blue-400" />
           </Link>
         </div>
       </div>
