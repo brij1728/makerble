@@ -3,7 +3,7 @@ import { newsData } from '@/data/newsData';
 
 export const NewsFeed = () => {
   return (
-    <div className="p-6">
+    <div className="rounded-lg bg-gray-50 p-6 shadow-md">
       <h2 className="mb-4 text-2xl font-bold">NewsFeed</h2>
       <div className="space-y-4">
         {newsData.map((item) => (
