@@ -1,8 +1,14 @@
-export default function Home() {
+import { Board, NewsFeed } from '@/components';
+
+const HomePage = () => {
   return (
-    <div>
-      <h1>Home</h1>
-      <p>Some text</p>
+    <div className="flex">
+      <div className="flex-grow">
+        <NewsFeed />
+      </div>
+      <Board />
     </div>
   );
-}
+};
+
+export default HomePage;

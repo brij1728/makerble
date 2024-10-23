@@ -19,6 +19,7 @@ const config: Config = {
           100: '#2f405b',
         },
         blue: {
+          400: '#60a5fa ',
           600: '#2563eb', // Primary blue color
           700: '#1e40af', // Darker blue for hover
         },
